@@ -6,8 +6,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="bg-white text-black bg-cover bg-center h-[80vh] flex flex-col justify-center items-center text-white text-center"
-        style={{ backgroundImage: "url('/images/4.jpeg')" }} 
+        className="bg-white text-black bg-cover bg-center min-h-screen pt-24 flex flex-col justify-center items-center text-white text-center"
+        style={{ backgroundImage: "url('/images/4.jpeg')" }}
       >
         <h1 className="text-5xl font-bold drop-shadow-lg">Ninox Nature Club</h1>
         <p className="text-2xl mt-4 font-light drop-shadow-md">Making Eco Echo</p>
@@ -29,8 +29,8 @@ export default function Home() {
           <Image
             src="/images/3.jpeg"
             alt="Planting Tree"
-            width={500}  // change width if req
-            height={300} // change height if req
+            width={400}
+            height={300}
             className="rounded-lg shadow-lg"
           />
         </div>
@@ -105,6 +105,100 @@ export default function Home() {
               <span className="text-2xl">&#8594;</span>
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className="relative bg-white py-20">
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+          Testimonials
+        </h2>
+
+        <div className="relative w-full px-4 sm:px-8 flex flex-col lg:flex-row lg:justify-between gap-8">
+
+          {/* Left Section */}
+          <div className="flex flex-col space-y-10">
+            {/* Row 1: Card 1 & 2 and Card 4 */}
+            <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-8 sm:space-y-0">
+              {/* Column 1: Card 1 & 2 */}
+              <div className="flex flex-col space-y-10">
+                {/* Card 1 */}
+                <div className="w-96 h-40 bg-white shadow-lg rounded-xl p-4">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-2">
+                    <img src="/images/teranium.jpeg" alt="description" className="w-full h-full object-cover" />
+                  </div>
+                  <p className="text-sm text-gray-700">hello</p>
+                </div>
+
+                {/* Card 2 */}
+                <div className="w-96 h-40 bg-white shadow-lg rounded-xl p-4">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-2">
+                    <img src="/images/ganna.jpeg" alt="profile" className="w-full h-full object-cover" />
+                  </div>
+                  <p className="text-sm text-gray-700">hi</p>
+                </div>
+              </div>
+
+              {/* Column 2: Card 4 */}
+              <div className="flex flex-col">
+                <div className="w-60 h-80 bg-white shadow-lg rounded-xl p-4">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-2">
+                    <img src="images/logo.png" alt="profile" className="w-full h-full object-cover" />
+                  </div>
+                  <p className="text-sm text-gray-700">yoo</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Row 2: Card 3 full width below */}
+            <div className="w-full">
+              <div className="w-full h-40 bg-white shadow-lg rounded-xl p-4 relative">
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+                  <div className="w-24 h-24 rounded-full bg-gray-300"></div>
+                  <div className="w-24 h-24 rounded-full bg-gray-300"></div>
+                  <div className="w-24 h-24 rounded-full bg-gray-300"></div>
+                </div>
+                <p className="text-sm text-gray-700 mt-4">ninox</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Middle Section */}
+          <div className="flex flex-col space-y-10">
+            {/* Card 5 */}
+            <div className="w-60 h-80 bg-white shadow-lg rounded-xl p-4">
+              <div className="w-48 h-48 bg-gray-300 mb-2"></div>
+              <p className="text-sm text-gray-700">wow</p>
+            </div>
+
+            {/* Card 6 */}
+            <div className="w-60 h-80 bg-white shadow-lg rounded-xl p-4 relative">
+              <div className="w-32 h-32 rounded-full bg-gray-300 mb-2 absolute top-0 left-1/2 transform -translate-x-1/2"></div>
+              <p className="text-sm text-gray-700 mt-20 text-center">less go</p>
+            </div>
+          </div>
+
+          {/* Right Section */}
+          <div className="flex flex-col space-y-10">
+            {/* Card 7 */}
+            <div className="w-96 h-40 bg-white shadow-lg rounded-xl p-4">
+              <div className="w-16 h-16 rounded-full bg-gray-300 mb-2"></div>
+              <p className="text-sm text-gray-700">i m in</p>
+            </div>
+
+            {/* Card 8 */}
+            <div className="w-96 h-40 bg-white shadow-lg rounded-xl p-4">
+              <div className="w-32 h-32 bg-gray-300 mb-2"></div>
+              <p className="text-sm text-gray-700">hurray</p>
+            </div>
+
+            {/* Card 9 */}
+            <div className="w-96 h-40 bg-white shadow-lg rounded-xl p-4">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-2"></div>
+              <p className="text-sm text-gray-700">yay</p>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
